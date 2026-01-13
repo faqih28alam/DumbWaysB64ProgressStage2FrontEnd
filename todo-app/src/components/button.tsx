@@ -3,12 +3,13 @@
 //implement props
 type ButtonProps = {
     text: string;
+    evetOnClick: () => void;           // to handle click
 }
 
-export default function Button({text}: ButtonProps) {
+export default function Button({ text, evetOnClick }: ButtonProps) {
 
     return (
-        <button>{text}</button>
+        <button onClick={evetOnClick}>{text}</button>
     )       
 }
 

@@ -3,7 +3,7 @@ Repository to store our learning progress at Dumbways.id Bootcamp
 
 ## 🎯 Topic & Task - TO DO LIST
 Day 1 - React Basic Setup & Components Fundamentals
-- 
+- Conditional Rendering
 
 
 ## 🛠️ Step to setup Day 1 project
@@ -11,7 +11,9 @@ Day 1 - React Basic Setup & Components Fundamentals
 - npm create vite@latest todo-app -- --template react-ts
 - add src/components/card.tsx
 - add src/components/button.tsx
+- add src/components/counter.tsx
 - edit components to have props
+- add src/components/todoItem.tsx
 
 ```
 
