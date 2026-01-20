@@ -8,23 +8,25 @@ Day 3 - React Context, Global State Management, & CRUD Operation
 
 ## 🛠️ Step to setup Day 3 project
 ```text
-- npm create vite@latest productcatalog-app -- --template react-ts
-- cd productcatalog-app
+- npm create vite@latest todo-app -- --template react-ts
+- cd todo-app
 - npm install tailwindcss @tailwindcss/vite
 - update index.css
 - update tsconfig.json
 - update tsconfig.app.json
+- update index.html
 - npm install -D @types/node
 - update vite.config.ts
 - npx shadcn@latest init
 - npm i react-router-dom
 - add src/pages/about.tsx home.tsx postDetail.tsx posts.tsx
 - add <BrowserRouter> to App.tsx for routing
-- add components --> npx shadcn@latest add button
+- add components --> npx shadcn@latest add button; card; label; input
 - intsall axios library for fetching data --> npm i axios
 - use fakestoreapi.com for data fetching
 - Separate router and components
-- add components --> npx shadcn@latest add label & input
+- 10:01
+
 ```
 
 ## 📂 Project Structure
@@ -111,6 +113,10 @@ export default defineConfig({
     },
   },
 })
+```
+- add this to index.html
+```html
+<link href="/src/style.css" rel="stylesheet">
 ```
 
 #### Notes
