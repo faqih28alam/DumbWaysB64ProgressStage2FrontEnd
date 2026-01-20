@@ -21,6 +21,11 @@ Day 2 - Advanced Styling, Authentication, Private Route & Data Fetching
 - add src/pages/about.tsx home.tsx postDetail.tsx posts.tsx
 - add <BrowserRouter> to App.tsx for routing
 - add components --> npx shadcn@latest add button
+- intsall axios library for fetching data --> npm i axios
+- use fakestoreapi.com for data fetching
+- Separate router and components
+- add components --> npx shadcn@latest add label & input
+- 1:03:00
 ```
 
 ## 📂 Project Structure
@@ -28,6 +33,17 @@ Day 2 - Advanced Styling, Authentication, Private Route & Data Fetching
 MultiPageBlog-app/
 ├── public/              # Static assets (logos, icons)
 ├── src/                 # Main application source code
+│   ├── context/         # Global state management using React Context
+|   |   ├── authContext.tsx   # Authentication context
+|   |   └── authProvider.tsx  # Authentication provider
+│   ├── hooks/           # Custom React hooks
+│   │   └── useAuth.tsx  # Authentication hook
+│   ├── pages/           # Page components
+│   │   ├── about.tsx    # About page component
+│   │   ├── home.tsx     # Home page component
+│   │   ├── login.tsx    # Login page component
+│   │   ├── postDetail.tsx # Post detail page component
+│   │   └── posts.tsx    # Posts page component
 │   ├── assets/          # Images and global styles
 │   ├── components/ui/   # Reusable functional components (Button, Card, etc.)
 │   │   ├── button.tsx   # Custom button component
