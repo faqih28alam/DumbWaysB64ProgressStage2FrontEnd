@@ -9,7 +9,7 @@ import { AuthProvider } from './context/AuthProvider'
 import Login from './pages/login'
 import { useAuth } from './hooks/useAuth'
 import PrivateRoute from './lib/PrivateRoute'
-import ThemeToggle from './components/themeToggle'
+import ThemeToggle from './components/ThemeToggle'
 
 //function to separate components & router
 function Header() {
