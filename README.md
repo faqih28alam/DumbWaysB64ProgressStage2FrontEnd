@@ -1,12 +1,12 @@
-# 📝 Stage 2 - Front End - Day 2 
+# 📝 Stage 2 - Front End - Day 3 
 Repository to store our learning progress at Dumbways.id Bootcamp
 
-## 🎯 Topic & Task - Product Catalog
-Day 2 - Advanced Styling, Authentication, Private Route & Data Fetching
+## 🎯 Topic & Task - Mini Store Project
+Day 3 - React Context, Global State Management, & CRUD Operations
 -  
 - 
 
-## 🛠️ Step to setup Day 2 project
+## 🛠️ Step to setup Day 3 project
 ```text
 - npm create vite@latest productcatalog-app -- --template react-ts
 - cd productcatalog-app
@@ -25,7 +25,6 @@ Day 2 - Advanced Styling, Authentication, Private Route & Data Fetching
 - use fakestoreapi.com for data fetching
 - Separate router and components
 - add components --> npx shadcn@latest add label & input
-- 1:03:00
 ```
 
 ## 📂 Project Structure

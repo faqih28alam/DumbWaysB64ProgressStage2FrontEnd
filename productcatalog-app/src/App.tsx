@@ -10,6 +10,8 @@ import Login from './pages/login'
 import { useAuth } from './hooks/useAuth'
 import PrivateRoute from './lib/PrivateRoute'
 import ThemeToggle from './components/ThemeToggle'
+import Cart from './pages/Cart'
+import { CartProvider } from './context/CartContext'
 
 //function to separate components & router
 function Header() {
@@ -27,6 +29,12 @@ function Header() {
         {token && (
           <Button asChild variant="outline"> 
             <Link to="/products">Products</Link>
+          </Button>
+        )}
+
+        {token && (
+          <Button asChild variant="outline"> 
+            <Link to="/cart">My Cart</Link>
           </Button>
         )}
         
@@ -48,19 +56,26 @@ function App() {
 
   return (
     <AuthProvider>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={
-            <PrivateRoute>
-              <Products/>
-            </PrivateRoute>
-          }></Route>
-        </Routes>
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={
+              <PrivateRoute>
+                <Products/>
+              </PrivateRoute>
+            }></Route>
+            <Route path="/cart" element={
+              <PrivateRoute>
+                <Cart/>
+              </PrivateRoute>
+            }></Route>
+          </Routes>
+        </BrowserRouter>
+      </CartProvider>
     </AuthProvider>
   )
 }
