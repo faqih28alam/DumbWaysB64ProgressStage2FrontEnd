@@ -1,4 +1,4 @@
-![App Preview](https://github.com/faqih28alam/DumbWaysB64ProgressStage2FrontEnd/tree/Day3Checkpoint2/productcatalog-app/public/UI.gif)
+![App Preview](https://raw.githubusercontent.com/faqih28alam/DumbWaysB64ProgressStage2FrontEnd/Day3Checkpoint2/productcatalog-app/public/UI.gif)
 
 # 📝 Stage 2 - Front End - Day 3 
 Repository to store our learning progress at Dumbways.id Bootcamp
