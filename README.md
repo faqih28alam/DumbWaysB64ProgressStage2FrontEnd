@@ -119,4 +119,3 @@ export default defineConfig({
 - Components are reusable blocks of code that can be used multiple times in a React application.
 - Props are input parameters that are passed to a component when it is rendered in a React application.
 - ShadCN UI is a collection of ready-to-use React components that are designed to be used with Tailwind CSS.
-- Implement Search Filter in Progress
